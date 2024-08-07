@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Lista.css";
 
 function Lista(_props){
-    let tarefas=["Tarefa 1", "Tarefa 2", "Tarefa 3"];
+    let tarefas=["Ler um livro", "Estudar matérias em que há mais dúvidas", "Jogar Valorant", "Assistir Alanzoka"];
     const [marcado, mudarMarcacao] = useState([]);
 
     const verificar = (event) => {
@@ -27,7 +27,7 @@ function Lista(_props){
         <>
         <div className="app">
         <div className="lista">
-            <div className="titulo">Lista de Tarefas:</div>
+            <div className="titulo">To Do:</div>
             <div className="container-lista">
                 {tarefas.map((item, index) => (
                     <div key={index}>
